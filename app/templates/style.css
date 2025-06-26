@@ -1,0 +1,106 @@
+/* 전체 기본 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* 헤더와 컨테이너 */
+header, footer {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* 폼 스타일 */
+form {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button,
+form button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+button:hover,
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* 테이블 스타일 (expenses.html) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table thead {
+  background-color: #007BFF;
+  color: #fff;
+}
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+/* 버튼 스타일 (페이지 전환 버튼 등) */
+.button-link {
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+.button-link:hover {
+  background-color: #218838;
+}
+
+/* 추가적인 여백과 정렬 */
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
