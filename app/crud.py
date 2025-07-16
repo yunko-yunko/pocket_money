@@ -6,10 +6,7 @@ def get_user_by_username(db: Session, username: str):
     return db.query(models.User).filter(models.User.username == username).first()
 
 def create_user(db: Session, user: schemas.UserCreate):
-    db_user = models.User(
-        username=user.username,
-        password=user.password
-    )
+    db_user = models.User(username=user.username, password=user.password)
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
@@ -17,12 +14,7 @@ def create_user(db: Session, user: schemas.UserCreate):
 
 # Expense 관련 함수
 def create_expense(db: Session, expense: schemas.ExpenseCreate):
-    db_expense = models.Expense(
-        user_id=expense.user_id,
-        amount=expense.amount,
-        expense_date=expense.expense_date,
-        reason=expense.reason
-    )
+    db_expense = models.Expense(user_id=expense.user_id, amount=expense.amount, expense_date=expense.expense_date, reason=expense.reason)
     db.add(db_expense)
     db.commit()
     db.refresh(db_expense)

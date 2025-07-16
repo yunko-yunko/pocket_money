@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       event.preventDefault(); // 폼 제출시 페이지 리로드 방지
       const username = document.getElementById("reg-username").value;
       const password = document.getElementById("reg-password").value;
-  
+
       try {
         const response = await fetch("/auth/register", {
           method: "POST",
